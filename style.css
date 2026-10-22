@@ -1,4 +1,3 @@
-/* Pengaturan Umum (Tanpa :root) */
 body {
     background-color: #c5bcac;
     color: #2b2825;
@@ -16,7 +15,6 @@ h1, h2, h3, h4, .judul_bagian, .judul_klasik {
     font-weight: 400;
 }
 
-/* Sampul Utama (Hero) */
 .sampul_utama {
     position: relative;
     min-height: 100vh;
@@ -60,7 +58,6 @@ h1, h2, h3, h4, .judul_bagian, .judul_klasik {
     color: #2b2825;
 }
 
-/* Hitungan Mundur */
 .kotak_waktu {
     background-color: rgba(43, 40, 37, 0.7);
     border: 1px solid rgba(244, 241, 234, 0.3);
@@ -87,7 +84,6 @@ h1, h2, h3, h4, .judul_bagian, .judul_klasik {
     color: #e5dec9;
 }
 
-/* Bagian Cerita Cinta */
 .bagian_cerita_cinta {
     background-color: #c5bcac;
     padding: 90px 0;
@@ -122,7 +118,6 @@ h1, h2, h3, h4, .judul_bagian, .judul_klasik {
     font-weight: 400;
 }
 
-/* Spanduk Foto Besar */
 .spanduk_foto_besar {
     width: 100%;
     max-height: 600px;
@@ -136,7 +131,6 @@ h1, h2, h3, h4, .judul_bagian, .judul_klasik {
     object-fit: cover;
 }
 
-/* Bagian Acara & Resepsi */
 .bagian_acara {
     background-color: #b5a996;
     padding: 90px 0;
@@ -166,7 +160,6 @@ h1, h2, h3, h4, .judul_bagian, .judul_klasik {
     min-width: 100px;
 }
 
-/* Bagian Galeri */
 .bagian_galeri {
     padding: 100px 0;
     background: url('images/foto_background.jpg') center/cover fixed no-repeat;
@@ -192,7 +185,6 @@ h1, h2, h3, h4, .judul_bagian, .judul_klasik {
     transform: translateY(-8px);
 }
 
-/* Bagian Hadiah */
 .bagian_hadiah {
     background-color: #c5bcac;
     padding: 90px 0;
@@ -234,7 +226,6 @@ h1, h2, h3, h4, .judul_bagian, .judul_klasik {
     background-color: #423e3a;
 }
 
-/* Bagian Kontak / Footer */
 .bagian_kontak {
     background-color: #2b2825;
     color: #c5bcac;
@@ -258,7 +249,6 @@ h1, h2, h3, h4, .judul_bagian, .judul_klasik {
     margin-bottom: 0;
 }
 
-/* Tombol Musik Melayang */
 .tombol_musik_melayang {
     position: fixed;
     bottom: 30px;
@@ -283,7 +273,6 @@ h1, h2, h3, h4, .judul_bagian, .judul_klasik {
     background-color: #423e3a;
 }
 
-/* Modal RSVP Kustom */
 .isi_modal_kustom {
     background-color: #2b2825;
     color: #f4f1ea;
@@ -343,14 +332,12 @@ h1, h2, h3, h4, .judul_bagian, .judul_klasik {
     background-color: #e5dec9;
 }
 
-/* Toast Pemberitahuan */
 .pemberitahuan_toast_kustom {
     background-color: #2b2825;
     color: #f4f1ea;
     border: 1px solid #c5bcac;
 }
 
-/* Penyesuaian Tampilan Seluler (Responsive) */
 @media (max-width: 768px) {
     .nama_mempelai {
         font-size: 3rem;
