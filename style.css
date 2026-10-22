@@ -1,0 +1,364 @@
+/* Pengaturan Umum (Tanpa :root) */
+body {
+    background-color: #c5bcac;
+    color: #2b2825;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, .judul_bagian, .judul_klasik {
+    font-family: 'Cinzel', serif;
+    letter-spacing: 2px;
+}
+
+.nama_mempelai, .judul_kontak {
+    font-family: 'Alex Brush', cursive;
+    font-weight: 400;
+}
+
+/* Sampul Utama (Hero) */
+.sampul_utama {
+    position: relative;
+    min-height: 100vh;
+    background: url('images/foto_sampul.jpg') center/cover no-repeat;
+    padding: 80px 0;
+}
+
+.lapisan_gelap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(43, 40, 37, 0.65);
+}
+
+.nama_mempelai {
+    font-size: 4.5rem;
+    color: #f4f1ea;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.teks_subjudul {
+    letter-spacing: 4px;
+    font-weight: 300;
+    color: #e5dec9;
+}
+
+.tombol_utama_outline {
+    background: transparent;
+    border: 1px solid #f4f1ea;
+    color: #f4f1ea;
+    padding: 12px 35px;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+}
+
+.tombol_utama_outline:hover {
+    background: #f4f1ea;
+    color: #2b2825;
+}
+
+/* Hitungan Mundur */
+.kotak_waktu {
+    background-color: rgba(43, 40, 37, 0.7);
+    border: 1px solid rgba(244, 241, 234, 0.3);
+    padding: 15px;
+    min-width: 80px;
+    border-radius: 4px;
+}
+
+.kotak_waktu span {
+    display: block;
+    font-size: 1.8rem;
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+}
+
+.kotak_waktu small {
+    font-size: 0.65rem;
+    letter-spacing: 1px;
+    color: #c5bcac;
+}
+
+.rincian_lokasi {
+    letter-spacing: 2px;
+    color: #e5dec9;
+}
+
+/* Bagian Cerita Cinta */
+.bagian_cerita_cinta {
+    background-color: #c5bcac;
+    padding: 90px 0;
+}
+
+.judul_klasik {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #2b2825;
+}
+
+.bingkai_foto_utama {
+    filter: sepia(30%) grayscale(40%);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: filter 0.3s ease;
+}
+
+.bingkai_foto_utama:hover {
+    filter: sepia(0%) grayscale(0%);
+}
+
+.gambar_responsif {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.teks_deskripsi {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: #3d3833;
+    font-weight: 400;
+}
+
+/* Spanduk Foto Besar */
+.spanduk_foto_besar {
+    width: 100%;
+    max-height: 600px;
+    overflow: hidden;
+    filter: grayscale(80%) sepia(20%);
+}
+
+.gambar_penuh {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Bagian Acara & Resepsi */
+.bagian_acara {
+    background-color: #b5a996;
+    padding: 90px 0;
+}
+
+.judul_bagian {
+    font-size: 1.6rem;
+    margin-bottom: 40px;
+    color: #2b2825;
+    border-bottom: 1px solid rgba(43, 40, 37, 0.2);
+    padding-bottom: 15px;
+}
+
+.sub_judul {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #2b2825;
+}
+
+.baris_jadwal {
+    border-bottom: 1px solid rgba(43, 40, 37, 0.15);
+    font-size: 0.9rem;
+}
+
+.baris_jadwal .waktu {
+    font-weight: 600;
+    min-width: 100px;
+}
+
+/* Bagian Galeri */
+.bagian_galeri {
+    padding: 100px 0;
+    background: url('images/foto_background.jpg') center/cover fixed no-repeat;
+}
+
+.lapisan_belakang_galeri {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(43, 40, 37, 0.75);
+}
+
+.bingkai_galeri {
+    filter: grayscale(100%);
+    transition: transform 0.4s ease, filter 0.4s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.bingkai_galeri:hover {
+    filter: grayscale(0%);
+    transform: translateY(-8px);
+}
+
+/* Bagian Hadiah */
+.bagian_hadiah {
+    background-color: #c5bcac;
+    padding: 90px 0;
+}
+
+.bingkai_foto_hadiah {
+    filter: sepia(30%) grayscale(30%);
+}
+
+.judul_hadiah {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    color: #2b2825;
+}
+
+.kotak_qr {
+    background: #ffffff;
+    padding: 10px;
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.gambar_qr {
+    width: 120px;
+    height: 120px;
+}
+
+.tombol_salin_rekening {
+    background-color: #2b2825;
+    color: #f4f1ea;
+    border: none;
+    padding: 10px 20px;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+}
+
+.tombol_salin_rekening:hover {
+    background-color: #423e3a;
+}
+
+/* Bagian Kontak / Footer */
+.bagian_kontak {
+    background-color: #2b2825;
+    color: #c5bcac;
+    padding: 80px 0 50px 0;
+}
+
+.judul_kontak {
+    color: #f4f1ea;
+}
+
+.bingkai_foto_kontak {
+    filter: grayscale(100%);
+}
+
+.rincian_kontak {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.rincian_kontak p {
+    margin-bottom: 0;
+}
+
+/* Tombol Musik Melayang */
+.tombol_musik_melayang {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    z-index: 999;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #2b2825;
+    color: #f4f1ea;
+    border: 1px solid #c5bcac;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.tombol_musik_melayang:hover {
+    transform: scale(1.1);
+    background-color: #423e3a;
+}
+
+/* Modal RSVP Kustom */
+.isi_modal_kustom {
+    background-color: #2b2825;
+    color: #f4f1ea;
+    border-radius: 0;
+    border: 1px solid #c5bcac;
+}
+
+.tata_modal_header {
+    border-bottom: 1px solid rgba(197, 188, 172, 0.2);
+}
+
+.judul_modal {
+    font-family: 'Cinzel', serif;
+    letter-spacing: 1px;
+}
+
+.tombol_tutup_putih {
+    filter: invert(1);
+}
+
+.label_kustom {
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+.input_kustom {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(197, 188, 172, 0.3);
+    color: #f4f1ea;
+    border-radius: 0;
+}
+
+.input_kustom:focus {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: #c5bcac;
+    color: #f4f1ea;
+    box-shadow: none;
+}
+
+.input_kustom option {
+    background-color: #2b2825;
+    color: #f4f1ea;
+}
+
+.tombol_kirim_kustom {
+    background-color: #c5bcac;
+    color: #2b2825;
+    border: none;
+    padding: 12px;
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+}
+
+.tombol_kirim_kustom:hover {
+    background-color: #e5dec9;
+}
+
+/* Toast Pemberitahuan */
+.pemberitahuan_toast_kustom {
+    background-color: #2b2825;
+    color: #f4f1ea;
+    border: 1px solid #c5bcac;
+}
+
+/* Penyesuaian Tampilan Seluler (Responsive) */
+@media (max-width: 768px) {
+    .nama_mempelai {
+        font-size: 3rem;
+    }
+    .judul_kontak {
+        font-size: 2.5rem;
+    }
+    .bagian_cerita_cinta, .bagian_acara, .bagian_hadiah, .bagian_galeri {
+        padding: 50px 0;
+    }
+}

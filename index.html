@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wedding of Rizal & Fika</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- CSS Kustom -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Musik Pengiring -->
+    <audio id="musik_latar" loop>
+        <source src="https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=romantic-wedding-113220.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Tombol Kontrol Musik -->
+    <button id="tombol_musik" class="tombol_musik_melayang" aria-label="Putar/Hentikan Musik">
+        <i class="fas fa-music"></i>
+    </button>
+
+    <!-- Bagian Sampul / Hero Section -->
+    <header class="sampul_utama d-flex align-items-center justify-content-center text-center text-light">
+        <div class="lapisan_gelap"></div>
+        <div class="konten_sampul position-relative container px-4">
+            <h1 class="nama_mempelai display-1 mb-2">Rizal &amp; Fika</h1>
+            <p class="teks_subjudul text-uppercase fs-5 mb-4">Are Getting Married</p>
+            
+            <button class="tombol_utama_outline mb-5" data-bs-toggle="modal" data-bs-target="#modal_rsvp">
+                RSVP HERE
+            </button>
+
+            <!-- Hitung Mundur -->
+            <div class="hitungan_mundur d-flex justify-content-center gap-3 gap-md-4 mb-5">
+                <div class="kotak_waktu">
+                    <span id="hari">00</span>
+                    <small>HARI</small>
+                </div>
+                <div class="kotak_waktu">
+                    <span id="jam">00</span>
+                    <small>JAM</small>
+                </div>
+                <div class="kotak_waktu">
+                    <span id="menit">00</span>
+                    <small>MENIT</small>
+                </div>
+                <div class="kotak_waktu">
+                    <span id="detik">00</span>
+                    <small>DETIK</small>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-between flex-column flex-md-row fs-6 rincian_lokasi text-uppercase">
+                <span>26 December 2026, 16:00 WIB</span>
+                <span>Loka Asri Park</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Bagian Cerita Cinta / About Section -->
+    <section class="bagian_cerita_cinta">
+        <div class="container text-center">
+            <div class="row align-items-center justify-content-center mb-5">
+                <div class="col-md-4 my-3">
+                    <h2 class="judul_klasik">Rizal Naren Darendra, S.T</h2>
+                    <p class="teks_deskripsi">Putra dari Bapak Iwa Sumantri & Ibu Laily Mauludiyah</p>
+                </div>
+                <div class="col-md-4 my-3">
+                    <div class="bingkai_foto_utama">
+                        <img src="images/foto_berdua.jpg" alt="Rizal dan Fika" class="gambar_responsif">
+                    </div>
+                </div>
+                <div class="col-md-4 my-3">
+                    <h2 class="judul_klasik">Fika Cahya Lovely, S.Kom</h2>
+                    <p class="teks_deskripsi">Putri dari Bapak Imam Suranto & Ibu Ety Mahareni</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <p class="teks_deskripsi">
+                        Dua hati, satu tujuan.
+                        <br>
+                        Kami memutuskan untuk berjalan bersama selamanya! Kehadiran dan doa restu kalian di hari bahagia kami tentu akan membuat momen ini makin berkesan dan tak terlupakan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spanduk Foto Besar -->
+    <section class="spanduk_foto_besar">
+        <img src="images/foto_besar.jpg" alt="Pernikahan Rafael dan Kirsten" class="gambar_penuh">
+    </section>
+
+    <!-- Bagian Acara & Resepsi -->
+    <section class="bagian_acara">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Susunan Acara -->
+                <div class="col-lg-6">
+                    <h2 class="judul_bagian">SUSUNAN ACARA</h2>
+                    <div class="tabel_jadwal">
+                        <div class="baris_jadwal d-flex justify-content-between py-3">
+                            <span class="waktu">16:00 WIB</span>
+                            <span class="kegiatan">Pembukaan &amp; Foto Sambutan</span>
+                        </div>
+                        <div class="baris_jadwal d-flex justify-content-between py-3">
+                            <span class="waktu">17:00 WIB</span>
+                            <span class="kegiatan">Makan Malam</span>
+                        </div>
+                        <div class="baris_jadwal d-flex justify-content-between py-3">
+                            <span class="waktu">18:00 WIB</span>
+                            <span class="kegiatan">Sambutan &amp; Pidato Pasangan</span>
+                        </div>
+                        <div class="baris_jadwal d-flex justify-content-between py-3">
+                            <span class="waktu">19:00 WIB</span>
+                            <span class="kegiatan">Sesi Foto Resmi Bersama</span>
+                        </div>
+                        <div class="baris_jadwal d-flex justify-content-between py-3">
+                            <span class="waktu">20:00 WIB</span>
+                            <span class="kegiatan">Bar Terbuka Pesta Dansa &amp; Penutupan</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Informasi Resepsi -->
+                <div class="col-lg-6">
+                    <h2 class="judul_bagian">RESEPSI</h2>
+                    
+                    <div class="blok_informasi mb-4">
+                        <h3 class="sub_judul">Lokasi Resepsi</h3>
+                        <p class="teks_deskripsi">
+                            Resepsi kami akan berlangsung di <br> Loka Asri Park Jl. Raya Suko Legok, Dusun Legok, Suko, Kec. Sukodono, Kabupaten Sidoarjo, Jawa Timur 61258
+                        </p>
+                    </div>
+
+                    <div class="blok_informasi mb-4">
+                        <h3 class="sub_judul">Tata Busana (Dress Code)</h3>
+                        <p class="teks_deskripsi">
+                            Taman bernuansa anggun dan santai! Bahan kain yang ringan, nyaman, serta sepatu yang pas (sepatu hak tinggi opsional karena dapat terbenam di tanah rumput). Warna-warna pastel sangat disarankan namun tidak wajib!
+                        </p>
+                    </div>
+
+                    <div class="blok_informasi">
+                        <h3 class="sub_judul">Parkir &amp; Petunjuk Arah</h3>
+                        <p class="teks_deskripsi">
+                            Parkir gratis tersedia di lokasi dengan area khusus untuk penyandang disabilitas dan lansia. Jika Anda membutuhkan bantuan khusus atau penurunan penumpang di dekat pintu masuk taman, beri tahu kami.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeri Foto Bertema Latar Belakang -->
+    <section class="bagian_galeri position-relative">
+        <div class="lapisan_belakang_galeri"></div>
+        <div class="container position-relative z-2 py-5">
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4">
+                    <div class="bingkai_galeri">
+                        <img src="images/foto_galeri1.jpg" alt="Foto Galeri 1" class="gambar_responsif">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="bingkai_galeri">
+                        <img src="images/foto_galeri2.jpg" alt="Foto Galeri 2" class="gambar_responsif">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="bingkai_galeri">
+                        <img src="images/foto_galeri3.jpg" alt="Foto Galeri 3" class="gambar_responsif">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Hadiah & QR Code -->
+    <section class="bagian_hadiah">
+        <div class="container">
+            <div class="row align-items-center justify-content-center g-5">
+                <div class="col-md-5">
+                    <div class="bingkai_foto_hadiah">
+                        <img src="images/foto_hadiah.jpg" alt="josjis" class="gambar_responsif">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="judul_hadiah mb-4">Kehadiran Anda adalah hadiah terbaik yang bisa kami harapkan.</h2>
+                    <p class="teks_deskripsi mb-4">
+                        Namun jika Anda ingin memberikan hadiah, kami telah menyiapkan daftar keinginan pernikahan sederhana melalui barang-barang impian kami di Sining Spaces.
+                    </p>
+
+                    <div class="area_qr_code d-flex align-items-center gap-3">
+                        <button class="tombol_salin_rekening" onclick="salinRekening('Bank Mandiri a.n Fika Cahya Lovely 1234567890')">
+                            <i class="fas fa-copy me-2"></i> Salin No. Rekening
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Kontak / Footer -->
+    <footer class="bagian_kontak">
+        <div class="container text-center">
+            <h2 class="judul_kontak display-3 mb-5">Hubungi Kami</h2>
+
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-6">
+                    <div class="bingkai_foto_kontak">
+                        <img src="images/foto_terakhir.jpg" alt="Rafael dan Kirsten Bahagia" class="gambar_responsif">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 text-center rincian_kontak">
+                <div class="col-md-4">
+                    <p><i class="fas fa-phone me-2"></i> 0822-2868-2272</p>
+                </div>
+                <div class="col-md-4">
+                    <p><i class="fas fa-envelope me-2"></i> rihhaaisy02@gmail.com</p>
+                </div>
+                <div class="col-md-4">
+                    <p><i class="fab fa-instagram me-2"></i> @rihha.ais</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal RSVP -->
+    <div class="modal fade" id="modal_rsvp" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content isi_modal_kustom">
+                <div class="modal-header tata_modal_header">
+                    <h5 class="modal-title judul_modal">Konfirmasi Kehadiran (RSVP)</h5>
+                    <button type="button" class="btn-close tombol_tutup_putih" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form id="formulir_rsvp">
+                        <div class="mb-3">
+                            <label for="nama_lengkap" class="form-label label_kustom">Nama Lengkap</label>
+                            <input type="text" class="form-control input_kustom" id="nama_lengkap" required placeholder="Masukkan nama Anda">
+                        </div>
+                        <div class="mb-3">
+                            <label for="status_kehadiran" class="form-label label_kustom">Apakah Anda Akan Hadir?</label>
+                            <select class="form-select input_kustom" id="status_kehadiran" required>
+                                <option value="" selected disabled>Pilih Status</option>
+                                <option value="Hadir">Ya, Saya Akan Hadir</option>
+                                <option value="Tidak Hadir">Maaf, Saya Tidak Bisa Hadir</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="jumlah_tamu" class="form-label label_kustom">Jumlah Tamu</label>
+                            <input type="number" class="form-control input_kustom" id="jumlah_tamu" min="1" max="3" value="1">
+                        </div>
+                        <div class="mb-4">
+                            <label for="pesan_ucapan" class="form-label label_kustom">Pesan &amp; Doa</label>
+                            <textarea class="form-control input_kustom" id="pesan_ucapan" rows="3" placeholder="Tuliskan pesan ucapan manis Anda..."></textarea>
+                        </div>
+                        <button type="submit" class="tombol_kirim_kustom w-100">KIRIM KONFIRMASI</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pemberitahuan Toast -->
+    <div class="pemberitahuan_toast_wadah position-fixed bottom-0 end-0 p-3" style="z-index: 1100;">
+        <div id="toast_notifikasi" class="toast pemberitahuan_toast_kustom align-items-center border-0" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body" id="isi_pesan_toast">
+                    Pesan notifikasi di sini.
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JavaScript Bundle dengan Popper -->
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Script Kustom -->
+    <script src="script.js"></script>
+</body>
+</html>
