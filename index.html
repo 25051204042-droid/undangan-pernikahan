@@ -5,33 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Wedding of Rizal & Fika</title>
 
-    <!-- Bootstrap 5 CSS -->
     <link href="bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
     
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome Icons -->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-    <!-- CSS Kustom -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Musik Pengiring -->
     <audio id="musik_latar" loop>
         <source src="audio/Anugerah Terindah - Andmesh (Saxophone Cover by Dori Wirawan).mp4">
     </audio>
 
-    <!-- Tombol Kontrol Musik -->
     <button id="tombol_musik" class="tombol_musik_melayang" aria-label="Putar/Hentikan Musik">
         <i class="fas fa-music"></i>
     </button>
 
-    <!-- Bagian Sampul / Hero Section -->
     <header class="sampul_utama d-flex align-items-center justify-content-center text-center text-light">
         <div class="lapisan_gelap"></div>
         <div class="konten_sampul position-relative container px-4">
@@ -42,7 +35,6 @@
                 RSVP HERE
             </button>
 
-            <!-- Hitung Mundur -->
             <div class="hitungan_mundur d-flex justify-content-center gap-3 gap-md-4 mb-5">
                 <div class="kotak_waktu">
                     <span id="hari">00</span>
@@ -69,7 +61,6 @@
         </div>
     </header>
 
-    <!-- Bagian Cerita Cinta / About Section -->
     <section class="bagian_cerita_cinta">
         <div class="container text-center">
             <div class="row align-items-center justify-content-center mb-5">
@@ -99,12 +90,10 @@
         </div>
     </section>
 
-    <!-- Spanduk Foto Besar -->
     <section class="spanduk_foto_besar">
         <img src="images/foto_besar.jpg" alt="Pernikahan Rafael dan Kirsten" class="gambar_penuh">
     </section>
 
-    <!-- Bagian Acara & Resepsi -->
     <section class="bagian_acara">
         <div class="container">
             <div class="row g-5">
@@ -135,7 +124,6 @@
                     </div>
                 </div>
 
-                <!-- Informasi Resepsi -->
                 <div class="col-lg-6">
                     <h2 class="judul_bagian">RESEPSI</h2>
                     
@@ -164,7 +152,6 @@
         </div>
     </section>
 
-    <!-- Galeri Foto Bertema Latar Belakang -->
     <section class="bagian_galeri position-relative">
         <div class="lapisan_belakang_galeri"></div>
         <div class="container position-relative z-2 py-5">
@@ -188,7 +175,6 @@
         </div>
     </section>
 
-    <!-- Bagian Hadiah & QR Code -->
     <section class="bagian_hadiah">
         <div class="container">
             <div class="row align-items-center justify-content-center g-5">
@@ -213,7 +199,6 @@
         </div>
     </section>
 
-    <!-- Bagian Kontak / Footer -->
     <footer class="bagian_kontak">
         <div class="container text-center">
             <h2 class="judul_kontak display-3 mb-5">Hubungi Kami</h2>
@@ -240,7 +225,6 @@
         </div>
     </footer>
 
-    <!-- Modal RSVP -->
     <div class="modal fade" id="modal_rsvp" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content isi_modal_kustom">
@@ -277,7 +261,6 @@
         </div>
     </div>
 
-    <!-- Pemberitahuan Toast -->
     <div class="pemberitahuan_toast_wadah position-fixed bottom-0 end-0 p-3" style="z-index: 1100;">
         <div id="toast_notifikasi" class="toast pemberitahuan_toast_kustom align-items-center border-0" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="d-flex">
@@ -289,10 +272,8 @@
         </div>
     </div>
 
-    <!-- Bootstrap 5 JavaScript Bundle dengan Popper -->
     <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- Script Kustom -->
+
     <script src="script.js"></script>
 </body>
 </html>
