@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    // 1. Logika Hitung Mundur (Countdown Timer)
     const tanggalPernikahan = new Date("December 26, 2026 16:00:00").getTime();
 
     const pembaruanHitungan = setInterval(function () {
@@ -33,7 +32,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }, 1000);
 
-    // 2. Pemutar Musik Latar Belakang
     const musikLatar = document.getElementById('musik_latar');
     const tombolMusik = document.getElementById('tombol_musik');
     let sedangMemutar = false;
@@ -50,21 +48,18 @@ document.addEventListener('DOMContentLoaded', function () {
             sedangMemutar = !sedangMemutar;
         });
 
-        // Otomatis putar musik saat klik pertama kali pada dokumen
         document.body.addEventListener('click', function putarOtomatisSekali() {
             if (!sedangMemutar) {
                 musikLatar.play().then(() => {
                     sedangMemutar = true;
                     tombolMusik.innerHTML = '<i class="fas fa-pause"></i>';
                 }).catch(() => {
-                    // Autoplay diblokir browser
                 });
             }
             document.body.removeEventListener('click', putarOtomatisSekali);
         }, { once: true });
     }
 
-    // 3. Penanganan Formulir RSVP
     const formulirRsvp = document.getElementById('formulir_rsvp');
     if (formulirRsvp) {
         formulirRsvp.addEventListener('submit', function (e) {
@@ -73,7 +68,6 @@ document.addEventListener('DOMContentLoaded', function () {
             const nama = document.getElementById('nama_lengkap').value;
             const status = document.getElementById('status_kehadiran').value;
 
-            // Tutup Modal
             const elemenModal = document.getElementById('modal_rsvp');
             if (elemenModal) {
                 const modalInstance = bootstrap.Modal.getInstance(elemenModal);
@@ -82,17 +76,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             }
 
-            // Tampilkan Notifikasi Toast
             tampilkanToast(`Terima kasih, ${nama}! Konfirmasi kehadiran Anda (${status}) telah berhasil dikirim.`);
 
-            // Reset Formulir
             formulirRsvp.reset();
         });
     }
 
 });
 
-// 4. Fungsi Salin Nomor Rekening
 function salinRekening(nomorRekening) {
     navigator.clipboard.writeText(nomorRekening).then(function () {
         tampilkanToast("Nomor Rekening berhasil disalin ke papan klip!");
@@ -101,7 +92,6 @@ function salinRekening(nomorRekening) {
     });
 }
 
-// 5. Fungsi Pemanggil Toast Notifikasi
 function tampilkanToast(pesan) {
     const elemenToast = document.getElementById('toast_notifikasi');
     const isiToast = document.getElementById('isi_pesan_toast');
